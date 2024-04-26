@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fullertone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/prueba.css">
+
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- 
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- BARRA SOBRE EL NAVEGADOR-->
+    <div class="barrasuperior">
+            <div class="navbar-right-11">
+              <p class="texto-superior">Conoce las ciudades con Despacho Gratis | DESPACHAMOS A TODO CHILE</p>
+            </div>
+            <div class="navbar-right-22">
+                <a class="link_head" href="">Login</a>
+                <p>|</p>
+                <a class="link_head" href="">Crear cuenta</a>
+            </div>
+        </div>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+<!-- HTML -->
+<nav class="navbar_2">
+    <div class="navbar-left-2">
+      <a href="index.html"><img src="assets/img/images.png"></a>
+      <a href="#">Mascotas</a>
+      <a href="#">Nuestras Marcas</a>
+      <a href="#">Cocina y Panadería</a>
+      <a href="#">Promociones</a>
+      <a href="#">Tienda</a>
+    </div>
+
+  </nav>
+  
+                <div class="navbar_3">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-right-2">
+                        <a href="#"><img src="assets/iconos/busqueda.png" alt="Icono de búsqueda"></a>
+                        <a href="#"><img src="assets/iconos/carrito.png" alt="Icono de carrito"></a>
+                      </div>
+                </div>
+   
+
+
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Banner Hero -->
+    <div id="carousel" class="carousel">
+        <img src="assets/img/carrusel1.png" alt="Imagen 1">
+        <img src="assets/img/carrusel2.jpeg" alt="Imagen 2">
+        <img src="assets/img/carrusel3.png" alt="Imagen 3">
+    </div>
+
+    <button onclick="nextImage()">Siguiente</button>
+
+    <script>
+        let carousel = document.getElementById('carousel');
+        let index = 0;
+
+        function nextImage() {
+            index++;
+            if (index >= carousel.children.length) {
+                index = 0;
+            }
+            carousel.style.transform = 'translateX(' + (-300 * index) + 'px)';
+        }
+    </script>
+
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1" style="font-weight: bolder;">Productos Destacados</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 p-5 mt-3">
+                <a href="#"><img src="./assets/img/producto1.png" ></a>
+                <h5 class="text-center mt-3 mb-3">BIRBO GATO CASTRADO X 15 KG</h5>
+                <p class="text-center">
+                    <h3 class="text-center mt-3 mb-3">$33.100</h3>
+                    <p class="text-center mt-3 mb-3">73 en stock</p>
+                    <a class="aclass">
+                        <button class="boton-añadir">Añadir al carrito</button></a></p>
+            </div>
+            <div class="col-12 col-md-3 p-5 mt-3">
+                <a href="#"><img src="./assets/img/producto 2.png"></a>
+                <h2 class="h5 text-center mt-3 mb-3">ENVOLVE DOG BAKED CHICKEN 4.98 KG</h2>
+                <p class="text-center">
+                    <h3 class="text-center mt-3 mb-3">$28.500</h3>
+                    <p class="text-center mt-3 mb-3">3 en stock</p>
+                    <a class="aclass">
+                        <button class="boton-añadir">Añadir al carrito</button></a></p>
+            </div>
+            <div class="col-12 col-md-3 p-5 mt-3">
+                <a href="#"><img src="./assets/img/producto 3.png"></a>
+                <h2 class="h5 text-center mt-3 mb-3">BIRBO CACHORRO X7 KG</h2>
+                <p class="text-center">
+                    <h3 class="text-center mt-3 mb-3">$12.500</h3>
+                    <p class="text-center mt-3 mb-3">163 en stock</p>
+                    <a class="aclass">
+                        <button class="boton-añadir">Añadir al carrito</button></a></p>
+            </div>
+            <div class="col-12 col-md-3 p-5 mt-3">
+                <a href="#"><img src="./assets/img/producto 4.png"></a>
+                <h5 class="text-center mt-3 mb-3">BIRBO ADULTO CARNE X 25 KG</h5>
+                <p class="text-center">
+                    <h3 class="text-center mt-3 mb-3">$29.900</h3>
+                    <p class="text-center mt-3 mb-3">4431 en stock</p>
+                    <a class="aclass">
+                        <button class="boton-añadir">Añadir al carrito</button></a></p>
+            </div>
+        </div>
+        <CENTER><a href="aclas"><button class="boton-vermas1">VER TODOS</button></a></CENTER>
+    </section>
+    <!-- End Categories of The Month -->
+
+        <!-- Iconos de Mascotas-->
+    <section class="col-auto wrap justify-content-center text-center ptb">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <center><h2 class="title col-12">Nuestras Mascotas</h2></center>
+		<p class="subtitle col-12"></p><p style="text-align: center;"><strong>¡ENCUENTRA TU PRODUCTO FAVORITO!</strong></p>
+            </div>
+        </div>
+        <div class="nuestraspets">
+            <div class="nuestraspets-a">
+                <a href="" class="nm-circle a-dog">
+                    <img src="assets/img/perro-icon.png">
+                    <h3 class="dog">Perros</h3>
+            </div>
+            <div class="nuestraspets-a">
+                <a href="" class="nm-circle a-dog">
+                    <img src="assets/img/gato-icon.png">
+                    <h3 class="cat">Gatos</h3>
+            </div>
+            <div class="nuestraspets-a">
+                <a href="" class="nm-circle a-dog">
+                    <img src="assets/img/conejo-icon.png">
+                    <h3 class="otherpets">Otras Mascotas</h3></a>
+            </div>
+            </div>
+
+    </section>
+    <!-- Fin Iconos de Mascotas-->
+    <!--Premium -->
+    <!-- Caracteristica alimentos-->
+    <section>
+        <div class="caracteristicas">
+           <div class="caracteristicas-1">
+               <img src="assets/img/grain-free.svg" alt=""><br>
+               <h5 class="parra-1">GRAIN FREE</h5><br>
+               <table>
+               <tr>    
+                   <td><button class="boton-perro">PERROS</button></td>
+                   <td><button class="boton-gato">GATOS</button></td>
+               </tr>
+           </table>
+           </div>
+           <div class="caracteristicas-2">
+               <img src="assets/img/super-premium.svg" alt=""><br>
+               <h5 class="parra-1">SUPER PREMIUM</h5><br>
+               <table>
+               <tr>    
+                   <td><button class="boton-perro">PERROS</button></td>
+                   <td><button class="boton-gato">GATOS</button></td>
+               </tr>
+           </table>
+           </div>
+           <div class="caracteristicas-3">
+               <img src="assets/img/high-premium.svg" alt=""><br>
+               <h5 class="parra-1">HIGH PREMIUM</h5><br>
+               <table>
+               <tr>    
+                   <td><button class="boton-perro">PERROS</button></td>
+                   <td><button class="boton-gato">GATOS</button></td>
+               </tr>
+           </table>
+           </div>
+           <div class="caracteristicas-4">
+               <img src="assets/img/premium.svg" alt=""><br>
+               <h5 class="parra-1">PREMIUM</h5><br>
+   
+               <table>
+               <tr>    
+                   <td><button class="boton-perro">PERROS</button></td>
+                   <td><button class="boton-gato">GATOS</button></td>
+               </tr>
+           </table>
+           </div>
+        </div>   
+       </section>
+    <!--NuestrasMarcas-->
+    <section>
+        <div class="nmarca" style="background-color: rgb(236, 236, 236);">
+            <div class="nmarca-1">
+                <br>
+                <br>
+                <h2>Nuestras marcas</h2>
+                <p>Amamos a los animales y queremos entregar lo mejor para ellos.</p>
+                <p>Hemos seleccionado cuidadosamente las marcas con las que trabajamos 
+                    para entregar productos de la mejor calidad y 
+                    accesibles a todos los bolsillos. Los invitamos a 
+                    descubrir el mundo de Fullerton, seguirnos en redes 
+                    sociales y conocer los beneficios de todos nuestros 
+                    alimentos.</p>
+                <a class="aclass">
+                        <button class="boton-añadir">VER MARCAS</button></a></p>
+
+            </div>
+            <div class="nmarca-2">
+                <div class="rejilla-marcas">
+                    <div class="rejilla-marcas-1">
+                        <a href="" class="img-link"><img src="assets/marcas/1.PNG" alt="" class="img-rejilla"></a>
+                    </div>
+                    <div class="rejilla-marcas-1">
+                        <a href="" class="img-link"><img src="assets/marcas/2.PNG" alt="" class="img-rejilla"></a>
+                    </div>
+                    <div class="rejilla-marcas-1">
+                        <a href="" class="img-link"><img src="assets/marcas/3.PNG" alt="" class="img-rejilla"></a>
+                    </div>
+                    <div class="rejilla-marcas-1">
+                        <a href="" class="img-link"><img src="assets/marcas/4.PNG" alt="" class="img-rejilla"></a>
+                    </div>
+                    <div class="rejilla-marcas-1">
+                        <a href="" class="img-link"><img src="assets/marcas/5.PNG" alt="" class="img-rejilla"></a>
+                    </div>
+                    <div class="rejilla-marcas-1">
+                        <a href="" class="img-link"><img src="assets/marcas/6.PNG" alt="" class="img-rejilla"></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="nmarca-3">
+                <img src="assets/img/gatito.png" alt="" style="height: 479px; width: 259px;">
+            </div>
+
+        </div>
+    </section>
+    <!--Fin nuestras marcas-->
+    <!--Caracteristicas de nuestras marcas-->
+    <section>
+        <div class="car-marcas">
+            <h1 style="text-align: center; margin-left: 25%; margin-right: 25%;">Características de <br> Nuestras Marcas</h1><br>
+            <p></p>
+            <p>Nuestros 50 años de experiencia y continuidad en el mercado como amantes N° 1 de las 
+                mascotas nos permiten ofrecer marcas que brindan a tu mascota crecimiento saludable, 
+                piel sana, pelaje brillante, reducción del volumen de las heces, alta absorción de proteinas, 
+                tracto urinario saludable, cuidado del corazón y visión; ofreciendo productos con bajo contenido de sodio, 
+                sin colorantes ni saborizantes artificiales, que aportan vitaminas y minerales con una dieta equilibrada y 
+                balanceada para brindar una mejor calidad de vida a tu mascota.</p>
+
+        </div>
+        <div class="video-marcas">
+            <video width="700" height="400" controls style="margin-top: -50px;" poster="assets/marcas/video perro.PNG">
+                <source src="https://www.fullerton.cl/wp-content/uploads/MonelloSenior_1.mp4" type="video/webm">
+                <p>Tu navegador no admite la etiqueta de video.</p>
+              </video><br>
+              <video width="700" height="400" controls style="margin-top: -50px;" poster="assets/marcas/video gato.PNG">
+                <source src="https://www.fullerton.cl/wp-content/uploads/MonelloCastrado_1.mp4" type="video/webm">
+                <p>Tu navegador no admite la etiqueta de video.</p>
+              </video>
+        </div>
+    </section>
+    <!-- Fin Caraterísticas Marcas son las 12 mañana sigues-->
+    <!-- 21-4 - Instagram-->
+    <section>
+        <a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img src="assets/iconos/instagram.PNG" alt=""  style="margin-left:350px;"></a>
+        <div class="instagram">
+            <div class="grid-instagram">
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/1.jpeg" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/2.jpeg" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/3.jpg" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/4.jpeg" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/5.jpg" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/6.jpeg" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/7.PNG" alt=""></a></div>
+                <div class="grid-item-instagram"><a href="https://www.instagram.com/fullertonchile/?hl=es" target="_blank"><img class="instagram-img" src="assets/imginstagram/8.jpeg" alt=""></a></div>
+            </div>
+            <div class="insta-botones">
+            <a href=""><button class="btn-cargar-mas">Cargar más ...</button></a>
+            <a href=""><button class="btn-seguir-instagram">
+                <i class="fab fa-instagram"></i> Seguir en Instagram
+              </button></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- contactos y horarios-->
+    <section>
+        <div class="contacto-banner">
+            <div class="contacto-banner-l">
+                <h2>¡Llámanos! <a href="tel:+56 32 253 9500" class="link_head"><i class="fas fa-phone"></i> +56 32 253 9500</a></h2>
+            </div>
+            <div class="contacto-banner-r">
+                <div class="contacto-banner-r1">
+                    <b>Horarios:<br>Call Center:</b>
+                </div>
+                <div class="contacto-banner-r2">
+                    <span>Lunes a viernes de 8:00 a 19:30 hrs.<br>Sábados de 8:00 a 13:00 hrs.			</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin contacto y horario-->
+    <section>
+        <div class="articulos">
+            <div class="articulos-top"></div>
+            <h1>Mi Mascota</h1>
+            <p>¡Descubre cómo cuidar la alimentación y bienestar de tu mascota!</p>
+            <div class="articulos-bottom">
+                <div class="columna-art">
+                    <div class="filart-top">
+                    <img src="assets/img/mipet1.PNG" alt="Imagen 1"></div>
+                    <div class="filart-bot">
+                    <h5>¿Cómo alimentar correctamente a las mascotas?</h5>
+                    <p>Proporcionar una dieta con nutrientes esenciales durante cada ciclo de vida de una mascota puede garantizar la salud y el […]</p>
+                    <a href=""><button class="btn-vermas-art">LEER MÁS</button></a>
+                    </div>
+                </div>
+                <div class="columna-art">
+                    <div class="filart-top">
+                        <img src="assets/img/mipet2.PNG" alt="Imagen 2"></div>
+                        <div class="filart-bot">
+                        <h5>¿Cómo cambiar su alimento?</h5>
+                        <p>Si vas a cambiar a alguna nueva marca, realiza el cambio en lapso de 7 a 10 días, mezclando de […]</p>
+                        <a href=""><button class="btn-vermas-art">LEER MÁS</button></a>
+                        </div>
+                </div>
+                <div class="columna-art">
+                    <div class="filart-top">
+                        <img src="assets/img/mipet3.PNG" alt="Imagen 3"></div>
+                        <div class="filart-bot">
+                        <h5>¿Adoptar a una mascota las hará feliz de nuevo?</h5>
+                        <p>¿Te animarías a adoptar un perro o un gato?, es importante concienciar y animar a la gente a dar una […]</p>
+                        <a href=""></a><button class="btn-vermas-art">LEER MÁS</button></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Articulos-->
+    <!-- Refugios amigos-->
+    <section>
+        <d  iv class="regufios">
+            <div class="refugios-top">
+            <h1>Refugios Amigos</h1>
+            <p>Nuestro amor por los animales va más allá de solo unas palabras, 
+                contamos con alianzas con diversas organizaciones de ayuda a los animales e 
+                instamos aportar con nuestro granito de arena para poder mejorar la vida de cientos de mascotas.</p></div>
+
+            <div class="refugios-bottom ">
+                <div class="columna-ref">
+                    <div class="refugiocol-top">
+                    <a href="https://www.instagram.com/refugiodhermes/?hl=es" target="_blank"><img src="assets/img/refugio1.jpg" alt="Imagen 1"></div></a>
+                    <div class="refugiocol-bot"><br>
+                    <b>Es una organización comunitaria de animales, sin fines de lucro que opera en la ciudad de Viña del Mar. 
+                        Nuestra misión es educar a la ciudadanía en castrar y esterilizar a sus mascotas y no abandonarlas. 
+                        Necesitamos de su apoyo, para seguir adelante en esta noble causa.</b>
+                    </div>
+                </div>
+                <div class="columna-ref">
+                    <div class="refugiocol-top">
+                        <a href="https://www.facebook.com/oppaoficial/?locale=es_LA" target="_blank"><img src="assets/img/refugio2.jpg" alt=""></a>
+
+                        </div>
+                            <div class="refugiocol-bot"><br>
+                            <b>Es una organización para La Protección Animal (OPPA), sin fines de lucro, fundada en la ciudad de Viña del Mar, 
+                                Chile, en Octubre de 1994, con el propósito de proteger a los animales y defenderlos de abusos y maltrato; 
+                                entregándoles refugio, alimentación y medicamentos hasta que alguna persona que desee cuidarlos y darles un hogar, los adopte.</b>
+                            </div>
+                </div>
+                <div class="columna-ref">
+                    <div class="refugiocol-top">
+                            <a href="https://www.facebook.com/soscallejeros.va/" target="_blank"><img src="assets/img/refugio3.jpg" alt="Imagen 1"></a></div>
+                            <div class="refugiocol-bot"><br>
+                            <b>Es una una organización sin fines de lucro ubicada en Villa Alemana, dedicada al rescate y recuperación de los animales en situación de calle</b>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin refugios-->
+    <!-- Visita-->
+    <section>
+        <div class="visita">
+            <div class="visita-1">
+                <img src="assets/img/perro-correa.png" alt="">
+            </div>
+            <div class="visita-2">
+                <h1>Visita Nuestras Tiendas</h1>
+                <p>FULLERTON, es una empresa de origen familiar con presencia en la V Región y la Región Metropolitana. 
+                    Nos destacamos por tener en las 12 sucursales un equipo de personas altamente calificadas para 
+                    brindar un excelente servicio, dando asesoría en base a las marcas que ofrecemos a nuestros clientes 
+                    y por sobre todo en nuestras salas de ventas encontrarás todo lo que necesitas saber sobre la alimentación, 
+                    cuidado de tus mascotas ¡y mucho más!.
+                    Hace tiempo que decidimos comenzar a importar y distribuir marcas exclusivas de comida seca,
+                    húmeda, snacks, arenas y mucho más, siempre con la mejor calidad que únicamente podrás encontrarlas 
+                    en nuestra tienda online o sucursales. ¡Visítenos!</p>
+                    <br>
+                    <a href=""><button class="boton-conocer">CONOCER TIENDAS</button></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
+                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/fullertonchile/?hl=es"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2021 Company Name 
+                            | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>

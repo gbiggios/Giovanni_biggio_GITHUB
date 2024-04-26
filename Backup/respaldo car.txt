@@ -1,0 +1,45 @@
+                <table class="nmarca-2-table">
+                    <tr>
+                        <td><a href=""><img src="assets/marcas/1.PNG" alt=""></a></td>
+                        <td><a href=""><img src="assets/marcas/2.PNG" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><img src="assets/marcas/3.PNG" alt=""></a></td>
+                        <td><a href=""><img src="assets/marcas/4.PNG" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><img src="assets/marcas/5.PNG" alt=""></a></td>
+                        <td><a href=""><img src="assets/marcas/6.PNG" alt=""></a></td>
+                    </tr>
+                </table>
+
+
+                .rejilla-marcas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px,1fr)); 
+  grid-template-rows: repeat(6, 1fr);  
+  grid-gap: 3px 5px; 
+  justify-items: center; }
+
+.rejilla-marcas-1 {
+  background: none;
+  text-align: center;
+  border: none;
+  height: 90px;
+  width: 140px;
+  padding: 3px
+  
+
+}
+
+
+            <div class="contacto-banner-r1">
+                <b>
+                    Horarios<br>Call Center:
+                </b>
+            </div>
+            <div class="contacto-banner-r2">
+                <span>Lunes a viernes de 8:00 a 19:30 hrs.<br>Sábados de 8:00 a 13:00 hrs.</span>
+            </div>
+
+             <h2 style="color: black;">¡Llámanos! <a href="tel:+56 32 253 9500" style="color: black;"><i class="fas fa-phone"></i> +56 32 253 9500</a></h2>
